@@ -1,0 +1,18 @@
+<template name="home">
+    <h1>Home</h1>
+    <div id="dropzone" style="min-height: 200px;min-width: 300px;border: dashed"> This is the dropzone
+    </div>
+    <br/>
+    {{#each images}}
+
+
+
+      {{#unless this.isUploaded}}
+        {{> FS.UploadProgressBar}}
+      {{/unless}}
+      <p><img src="{{this.url download=true}}"></p>
+
+
+    {{/each}}
+
+</template>

@@ -5,5 +5,11 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
 insecure
+iron:router
+meteorhacks:cluster
+cfs:gridfs
+cfs:s3
+cfs:standard-packages
+cfs:dropped-event
+cfs:ui
